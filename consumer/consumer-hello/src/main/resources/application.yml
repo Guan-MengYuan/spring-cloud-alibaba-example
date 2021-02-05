@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer-hello
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: life.gmy.spring.cloud.alibaba.example.provider.service
+  cloud:
+    subscribed-services: provider-hello
