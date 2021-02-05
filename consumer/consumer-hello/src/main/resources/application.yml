@@ -4,6 +4,8 @@ spring:
   main:
     allow-bean-definition-overriding: true
 dubbo:
+  consumer:
+    check: false
   protocol:
     name: dubbo
     port: -1
